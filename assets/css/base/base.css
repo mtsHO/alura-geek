@@ -1,0 +1,60 @@
+body {
+    font-family: var(--fonte-familia-corpo);
+    
+}
+
+.corpo {
+    display: grid;
+    grid-template-areas:
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto auto;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.conteudo {
+    grid-area: conteudo;
+}
+
+.rodape {
+    grid-area: rodape;
+}
+
+.container {
+    padding: 16px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--centro {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex--coluna {
+    flex-direction: column;
+}
+
+.invisivel {
+    display: none;
+}
+
+@media scren and (min-width:768px) {
+    .container {
+        padding: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 32px 152px;
+    }
+}
+

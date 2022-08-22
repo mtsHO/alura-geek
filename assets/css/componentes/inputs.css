@@ -1,0 +1,61 @@
+.input-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--fonte-tamanho-rodape-input);
+    font-weight: var(--fonte-peso-muito-leve);
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+input, textarea{
+    border-radius: 5px;
+    outline: unset;
+}
+
+textarea {
+    resize: none;
+}
+
+#nome {
+    height: 56px;
+    padding: 1.375rem 0.5rem 0.5rem;
+    width: 100%;
+}
+
+.input-modelo {
+    border-bottom: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input-label {
+    color: var(--preto-50);
+    left: 0.5rem;
+    position: absolute;
+    top: 0.5rem;
+}
+
+#mensagem {
+    height: 82px;
+    padding: 1.375rem 0.5rem 0.5rem;
+}
+
+#nome-produto {
+    height: 56px;
+    padding: 1.375rem 0.5rem 0.5rem;
+}
+
+#preco-produto {
+    height: 56px;
+    padding: 1.375rem 0.5rem 0.5rem;
+}
+
+#descricao-produto {
+    height: 82px;
+}

@@ -1,0 +1,74 @@
+@media screen and (min-width: 0px) {
+    .cabecalho {
+        align-items: center;
+        display: flex;
+        padding: 0;
+        justify-content:space-between;
+    }
+
+    .cabecalho__logo {
+        display: flex;
+        margin: 22px 16px;
+        width: 100px;        
+    }
+
+    .cabecalho__pesquisar {
+        display: none;
+    }
+
+    .cabecalho__pesquisar__input {
+        display: none;
+    }
+
+    .cabecalho__pesquisar__icone__mobile {
+        margin-right: 19px;
+        padding-top: 4px;
+        width: 17px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__logo {
+        margin-left: 32px;
+    }
+
+    .cabecalho__pesquisar {
+        display: flex;
+        margin-right: 19px;
+    }
+
+    .cabecalho__pesquisar__input {
+        background-color: var(--preto-5);
+        border: none;
+        border-radius: 20px;
+        box-sizing: border-box;
+        display: flex;
+        height: 40px;
+        padding-bottom: 12px;
+        padding-left: 0;
+        padding-top: 12px;
+        width: 272px;
+    }
+
+    .cabecalho__pesquisar__icone {
+        left: -30px;
+        padding-top: 11px;
+        position: relative;        
+    }
+
+    .cabecalho__pesquisar__icone__mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__logo {
+        margin-left: 152px;
+        width: 176px;
+    }
+
+    .cabecalho__pesquisar__input {
+        padding-left: 16px;
+        width: 393px;
+    }
+}

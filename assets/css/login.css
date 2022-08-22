@@ -1,0 +1,47 @@
+@media screen and (min-width: 0px) {
+    .conteudo {
+        background-color: var(--preto-5);
+    }
+
+    .cartao__login {
+        margin-bottom: 97px;
+        margin-top: 97px;
+    }
+
+    .cartao__login__titulo {
+        color: var(--preto-100);
+        font-size: var(--fonte-tamanho-cartao-login-titulo);
+        font-weight: var(--fonte-peso-pesado);
+        margin-bottom: 16px;
+    }
+
+    #email {
+        height: 41px;
+        width: 275px;
+    }
+
+    #senha {
+        height: 41px;
+        width: 275px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main form input {
+        height: 41px;
+        padding-left: 12px;
+        width: 275px;
+    }
+}
+
+@media screen and (min-width: 1024px) {    
+    #email {
+        height: 63px;
+        width: 423px;
+    }
+
+    #senha {
+        height: 63px;
+        width: 423px;
+    }
+}

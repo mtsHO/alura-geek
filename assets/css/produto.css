@@ -1,0 +1,88 @@
+ @media screen and (min-width: 0px){
+    .conteudo {
+        display: grid;
+        grid-template-areas: 
+        "produto-imagem"
+        "produto-corpo"
+        "outros-produtos";
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto auto;
+    }
+
+    .produto__geral__foto {
+        grid-area: produto-imagem;
+    }
+        
+    img.produto__geral__imagem{
+        height: 192px;
+        width: 100%;
+    }
+
+    .produto__principal__conteudo {
+        grid-area: produto-corpo;
+        margin: 16px;
+    }
+
+    h2.produto__principal__titulo {
+        color: var(--preto-100);
+        font-size: var(--fonte-tamanho-titulo-secundario);
+        font-weight: var(--fonte-peso-leve);
+        padding-bottom: 8px;
+    }
+
+    h3.produto__principal__valor {
+        color: var(--preto-100);
+        font-size: var(--fonte-tamanho-cartao-produtos-preco);
+        font-weight: var(--fonte-peso-pesado);
+    }
+
+    p.produto__principal__texto {
+        color: var(--preto-100);
+        font-size: var(--fonte-tamanho-cartao-produtos-descricao);
+        font-weight: var(--fonte-peso-leve);
+        line-height: 19px;
+        margin-top: 8px;
+    }
+
+    .produtos__geral{
+        grid-area: outros-produtos;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cartao__produto__completo {
+        display: grid;
+        grid-template-columns: 33.33% 66.66%;
+        margin: 16px;
+    }
+    
+    .produto__geral__foto {
+        grid-column: 1 / 2;
+        grid-row: 1 / 1;
+    }
+    
+    .produto__principal__conteudo {
+        grid-column: 2/ 3;
+        grid-row: 1 / 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cartao__produto__completo {
+        grid-template-columns: 50% 45%;
+        margin: 32px 152px;
+    }
+
+    img.produto__geral__imagem{
+        height: 400px;
+        }
+
+    .produto__principal__conteudo {
+        padding-top: 15%;
+        margin-left: 50px;
+    }
+
+    h2.produto__principal__titulo {
+        padding-bottom: 8px;
+    }    
+}

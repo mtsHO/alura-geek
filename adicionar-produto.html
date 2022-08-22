@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek | Adicionar produto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/base/reset.css">
+    <link rel="stylesheet" href="assets/css/base/variaveis.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/componentes/botoes.css">
+    <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="assets/css/componentes/rodape.css">
+    <link rel="stylesheet" href="assets/css/componentes/secao-produtos.css">
+    <link rel="stylesheet" href="assets/css/adicionar-produto.css">
+
+</head>
+<body class="corpo">
+    <header class="cabecalho">
+        <a href="index.html"><img src="assets/img/logo/Logo.png" alt="Alura Geek" class="cabecalho__logo"></a>
+            <div class="cabecalho__pesquisar">
+                <input type="text" placeholder="O que deseja encontrar?" class="cabecalho__pesquisar__input"> 
+                <nav><img src="assets/img/icone/icone--lupa.png" alt="Ícone pesquisar" class="cabecalho__pesquisar__icone"></nav>
+            </div>
+            <a href="login.html"><button class="botao botao__borda-azul botao__cabecalho botao__cabecalho--pagina-adicionar-produto">Menu administrador</button></a>
+            <nav><img src="assets/img/icone/icone--lupa--mobile.png" alt="Ícone pesquisar" class="cabecalho__pesquisar__icone__mobile"></nav>
+    </header>
+
+    <main class="conteudo">
+        <form class="cartao__adicionar-produto container" id="adicionarProduto">
+            <div class="flex flex--coluna">
+                <h2 class="cartao__adicionar-produto__titulo">Adicionar novo produto</h2>
+                <div class="flex flex--coluna">
+                    <div class="cartao__adicionar-imagem-produto">
+                        <label for="adicionar-imagem-produto" class="adicionar-imagem-produto-label flex flex--coluna flex--centro">Adicionar uma imagem para o produto</label>
+                        <input type="file" name="adicionar-imagem-produto" id="adicionar-imagem-produto" class="invisivel">
+                        <div class="adicionar-imagem-produto-variacao flex invisivel" id="mostra-botao-tablet">
+                            <p class="adicionar-imagem-produto-texto flex flex--coluna flex--centro">Ou</p>
+                            <label for="adicionar-imagem-produto" class="flex flex--coluna flex--centro botao__adicionar-imagem-produto">
+                                Procure no seu tablet
+                            </label>
+                        </div>
+                        <div class="adicionar-imagem-produto-variacao flex invisivel" id="mostra-botao-desktop">
+                            <p class="adicionar-imagem-produto-texto flex flex--coluna flex--centro">Ou</p>
+                            <label for="adicionar-imagem-produto" class="flex flex--coluna flex--centro botao__adicionar-imagem-produto">
+                                Procure no seu computador
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex flex--coluna">
+                    <div class="input-container">
+                        <label for="nome-produto" class="input-label">Nome do produto</label>
+                        <input type="text" id="nome-produto" class="input-modelo" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="preco-produto" class="input-label">Preço do produto</label>
+                        <input type="text" id="preco-produto" class="input-modelo" required>
+                    </div>
+                    <div class="input-container">
+                        <textarea name="descricao-produto" id="descricao-produto" class="input-modelo" placeholder="Descrição do produto" required></textarea>
+                    </div>
+                    <button class="botao botao__fundo-azul">Adicionar produto</button>
+                </div>
+            </div>
+        </form>
+     
+    </main>
+
+    <footer class="rodape ">
+        <div class="rodape___principal container flex flex--coluna">
+            <img src="assets/img/logo/Logo.png" alt="" class="rodape___principal__logo">
+            <div class="rodape___principal__itens">
+                <p class="rodape___principal__itens-titulo">
+                    <a href="#">Quem somos nós</a>
+                </p>
+                <p class="rodape___principal__itens-titulo">
+                    <a>Política de privacidade</a>
+                </p>
+                <p class="rodape___principal__itens-titulo">
+                    <a>Programa de fidelidade</a>
+                </p>
+                <p class="rodape___principal__itens-titulo">
+                    <a>Nossas lojas</a>
+                </p>
+                <p class="rodape___principal__itens-titulo">
+                    <a>Quero ser franqueado</a>
+                </p>
+                <p class="rodape___principal__itens-titulo">
+                    <a>Anuncie aqui</a>
+                </p>
+            </div>
+            <section class="rodape___principal__fale-conosco flex flex--coluna">
+                <div class="cartao__fale-conosco">
+                    <h3 class="cartao__fale-conosco__titulo">Fale conosco</h3>
+                    <form class="flex flex--coluna" id="novaMensagem">
+                        <div class="input-container">
+                            <input type="text" name="nome" id="nome" class="input-modelo" required>
+                            <label class="input-label" for="nome" >Nome</label>
+                        </div>
+                        <div class="input-container">
+                            <textarea name="mensagem" id="mensagem" class="input-modelo" placeholder="Escreva aqui sua mensagem" required></textarea>    
+                        </div>
+                        <button class="botao botao__fundo-azul botao__rodape">Enviar mensagem</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div class="rodape___final">
+            Desenvolvido por Mateus Henrique de Oliveira <br>
+            2022
+        </div>
+    </footer>
+    
+    <script src="js/adicionar-produtos.js"></script>
+    <script src="js/rodape.js"></script>
+</body>
+</html>

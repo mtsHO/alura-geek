@@ -1,0 +1,60 @@
+:root {
+    --azul-100: #2A7AE4;
+    --azul-80: #5595E9;
+    --azul-20: #D4E4FA;
+    --azul-10: #EAF2FD;
+
+    --preto-100: #464646;
+    --preto-50: #A2A2A2;
+    --preto-10: #E5E5E5;
+    --preto-5: #F5F5F5;
+    
+    --branco: #FFFFFF;
+
+    --fonte-peso-muito-leve: 400;
+    --fonte-peso-leve: 500;
+    --fonte-peso-medio: 600;
+    --fonte-peso-pesado: 700;
+    --fonte-peso-botao: 600;
+    --fonte-peso-botao-adicionar-produto-pag-adicionar-produto: 400;
+
+    --fonte-tamanho-titulo: 22px;
+    --fonte-tamanho-subtitulo: 14px;
+    --fonte-tamanho-titulo-secundario: 22px;
+    --fonte-tamanho-botao: 14px;
+    --fonte-tamanho-botao-ver-produto: 14px;
+    --fonte-tamanho-botao-adicionar-produto-pag-adicionar-produto: 16px;
+    --fonte-tamanho-cartao-produtos-titulo: 14px;
+    --fonte-tamanho-cartao-produtos-preco: 16px;
+    --fonte-tamanho-produto-principal-preco: 16px;
+    --fonte-tamanho-produto-principal-descicao: 14px;
+    --fonte-tamanho-rodape-itens: 16px;
+    --fonte-tamanho-rodape-input: 12px;
+    --fonte-tamanho-adicionar-produto-input-label: 14px;
+    --fonte-tamanho-cartao-login-titulo: 16px;
+
+    --altura-linha-botao: 16.44px;
+
+    --fonte-familia-corpo: 'Raleway', sans-serif;        
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --fonte-tamanho-titulo: 52px;
+        --fonte-tamanho-subtitulo: 22px;
+        --fonte-tamanho-botao-ver-produto: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --fonte-peso-botao: 400;
+
+        --fonte-tamanho-titulo-secundario: 32px;
+        --fonte-tamanho-botao: 16px;
+
+        --altura-linha-botao: 18.78px;
+
+        --fonte-tamanho-cartao-produtos-preco: 20px;
+        --fonte-tamanho-cartao-produtos-descricao: 18px;
+        --fonte-tamanho-cartao-login-titulo: 18px;
+}
